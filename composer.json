@@ -1,0 +1,39 @@
+{
+    "name": "italofantone/api-token-validator",
+    "description": "A simple package to validate API tokens with Laravel. Middleware to protect routes using valid tokens.",
+    "keywords": ["token", "api", "validator", "laravel"],
+    "type": "library",
+    "require": {
+        "php": "^8.1",
+        "illuminate/database": "^11.0",
+        "illuminate/support": "^11.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.3",
+        "orchestra/testbench": "^9.2"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Italofantone\\ApiTokenValidator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Italofantone\\ApiTokenValidator\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Italo Morales Fantone",
+            "email": "i@rimorsoft.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Italofantone\\ApiTokenValidator\\ApiTokenValidatorServiceProvider"
+            ]
+        }
+    }
+}
